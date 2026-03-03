@@ -1,0 +1,196 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: #f6f1eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #e8d7c3;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid #d4c2ae;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color:  #1f2937;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.menu-item {
+  padding: 12px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  color:  #111827;
+  border-radius: 8px;
+  cursor: pointer;
+   font-weight: 500;
+}
+
+.menu-item:hover {
+  background: #d8c5af;
+}
+
+.menu-item.active {
+  background: #c9b299;
+  font-weight: bold;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+/* Dashboard */
+.page-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #4a3b2b;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.value {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #4a3b2b;
+}
+
+.welcome-box {
+  margin-top: 30px;
+  background: #fff7ef;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #e4d8cd;
+}
+
+/* ===== Transaction List Text Dark ===== */
+
+.main-content table tbody td {
+  color: #111827 !important;   /* dark charcoal */
+  font-weight: 500;
+}
+
+.main-content table thead th {
+  color: #1f2937;
+  font-weight: 600;
+}
+table td {
+  color: #000 !important;
+}
+
+.goal-input {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #eee;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #16a34a;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+/* ===== FORCE DARK TRANSACTION TEXT ===== */
+
+.table {
+  color: #111827;
+}
+
+.table tbody td {
+  color: #111827 !important;
+  font-weight: 500;
+}
+
+.table tbody tr {
+  opacity: 1 !important;
+}
+
+.table thead th {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+/* Keep amount colors */
+.text-positive {
+  color: #16a34a !important;
+  font-weight: 600;
+}
+
+.text-negative {
+  color: #dc2626 !important;
+  font-weight: 600;
+}
+
+.goal-input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+  border: 1px solid #d1d5db;
+  margin-bottom: 0.7rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #0f766e, #22c55e);
+  transition: width 0.3s ease;
+}
+.chat-layout {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.chat-panel {
+  flex: 2;
+}
+
+.side-panel {
+  flex: 1;
+  min-width: 260px;
+}
