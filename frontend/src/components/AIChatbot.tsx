@@ -64,7 +64,7 @@ const AIChatbot: React.FC = () => {
         id: counter + 1,
         role: "assistant",
         text:
-          "There was a problem contacting the AI service. Please check that the backend is running on http://localhost:5000.",
+          "There was a problem contacting the AI service. Please check that the backend is running on https://ai-powered-financial-advisor.onrender.com/",
       };
       setCounter((c) => c + 2);
       setMessages((prev) => [...prev, botMsg]);
