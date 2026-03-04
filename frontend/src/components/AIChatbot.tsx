@@ -37,40 +37,18 @@ const AIChatbot: React.FC = () => {
     setInput("");
     setLoading(true);
 
-    try {
-      const response = await fetch("https://ai-powered-financial-advisor.onrender.com/", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: trimmed }),
-      });
-
-      const data = await response.json();
-
-      const replyText: string =
-        typeof data?.reply === "string"
-          ? data.reply
-          : "Sorry, I was not able to generate a response.";
-
+    /* ✅ Demo AI response (no backend call) */
+    setTimeout(() => {
       const botMsg: ChatMessage = {
         id: counter + 1,
         role: "assistant",
-        text: replyText,
+        text: "AI assistant will be available soon.",
       };
 
       setCounter((c) => c + 2);
       setMessages((prev) => [...prev, botMsg]);
-    } catch {
-      const botMsg: ChatMessage = {
-        id: counter + 1,
-        role: "assistant",
-        text:
-          "There was a problem contacting the AI service. Please check that the backend is running on https://ai-powered-financial-advisor.onrender.com/",
-      };
-      setCounter((c) => c + 2);
-      setMessages((prev) => [...prev, botMsg]);
-    } finally {
       setLoading(false);
-    }
+    }, 800);
   };
 
   return (
@@ -136,7 +114,6 @@ const AIChatbot: React.FC = () => {
 
       <aside className="side-panel">
         <div>
-          {/* ✅ Professional heading */}
           <div className="side-heading">Strategic Planning Tools</div>
 
           <div className="pill-list">
