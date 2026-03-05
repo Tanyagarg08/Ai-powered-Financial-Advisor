@@ -22,22 +22,19 @@ Backend: Flask API
 Deployment: Vercel (Frontend) + Render (Backend)
 
 ## Screenshots
+## Screenshots
 
 ### Dashboard
-
-![Dashboard](screenshots/Screenshot 2026-03-05 204018.png)
+![Dashboard](screenshots/Screenshot%202026-03-05%20204018.png)
 
 ### Chatbot
-
-![Chatbot](screenshots/Screenshot 2026-03-05 204126.png)
+![Chatbot](screenshots/Screenshot%202026-03-05%20204126.png)
 
 ### Transactions
-
-![Transactions](screenshots/Screenshot 2026-03-05 204032.png)
+![Transactions](screenshots/Screenshot%202026-03-05%20204032.png)
 
 ### Charts
-
-![Charts](screenshots/Screenshot 2026-03-05 205213.png)
+![Charts](screenshots/Screenshot%202026-03-05%20205213.png)
 
 ## Project Structure
 
